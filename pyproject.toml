@@ -11,6 +11,7 @@ classifiers = [
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",
   "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
   "Typing :: Stubs Only",
 ]
 description = "PEP 561 type stubs for portage."
@@ -68,7 +69,7 @@ strict_optional = true
 warn_unreachable = true
 
 [tool.poetry.dependencies]
-python = ">=3.10,<3.14"
+python = ">=3.10,<4.0"
 typing-extensions = "^4.15.0"
 
 [tool.poetry.group.dev]
@@ -91,7 +92,7 @@ include = "portage-stubs"
 [tool.pyright]
 deprecateTypingAliases = true
 enableExperimentalFeatures = true
-include = ["./portage-stubs", "./tests"]
+include = ["./portage-stubs"]
 pythonPlatform = "Linux"
 pythonVersion = "3.10"
 reportCallInDefaultInitializer = "warning"
@@ -112,69 +113,14 @@ namespace-packages = ["docs", "tests"]
 target-version = "py310"
 unsafe-fixes = true
 
+[tool.ruff.format]
+docstring-code-format = true
+line-ending = "lf"
+preview = true
+quote-style = "single"
+
 [tool.ruff.lint]
-extend-select = [
-  "A",
-  "AIR",
-  "ANN",
-  "ARG",
-  "ASYNC",
-  "B",
-  "BLE",
-  "C4",
-  "C90",
-  "COM",
-  "CPY",
-  "D",
-  "DJ",
-  "DOC",
-  "DTZ",
-  "E",
-  "EM",
-  "ERA",
-  "EXE",
-  "F",
-  "FA",
-  "FAST",
-  "FBT",
-  "FIX",
-  "FLY",
-  "FURB",
-  "G",
-  "I",
-  "ICN",
-  "INP",
-  "INT",
-  "ISC",
-  "LOG",
-  "N",
-  "NPY",
-  "PD",
-  "PERF",
-  "PGH",
-  "PIE",
-  "PL",
-  "PT",
-  "PTH",
-  "PYI",
-  "Q",
-  "RET",
-  "RSE",
-  "RUF",
-  "S",
-  "SIM",
-  "SLF",
-  "SLOT",
-  "T10",
-  "T20",
-  "TC",
-  "TD",
-  "TID",
-  "TRY",
-  "UP",
-  "W",
-  "YTT",
-]
+extend-select = ["ALL"]
 ignore = [
   "A002",
   "ANN401",
@@ -281,4 +227,4 @@ split_penalty_logical_operator = 300
 use_tabs = false
 
 [tool.yapfignore]
-ignore_patterns = ["node_modules/**"]
+ignore_patterns = [".venv/**", "node_modules/**"]

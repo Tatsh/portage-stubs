@@ -16,6 +16,7 @@ eprefix
 esbenp
 fetchonly
 findname
+foxundermoon
 furb
 hdepend
 htmlcov
@@ -55,10 +56,8 @@ preinst
 prerm
 pycache
 pydocstyle
-pylance
 pylint
 pyproject
-pyright
 pytest
 qmerge
 rdepend
@@ -68,10 +67,12 @@ returnpid
 returnproc
 rstcheck
 schemafile
+shellformat
 tatsh
 udvare
 useflags
 vartree
+venv
 vercmp
 wiswa
 xmatch

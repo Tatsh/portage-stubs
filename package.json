@@ -64,7 +64,7 @@
     }
   },
   "name": "portage-stubs",
-  "packageManager": "yarn@4.10.2",
+  "packageManager": "yarn@4.10.3",
   "prettier": {
     "endOfLine": "lf",
     "iniSpaceAroundEquals": true,
@@ -99,9 +99,7 @@
     "qa": "yarn mypy . && yarn ruff . && yarn check-spelling && yarn check-formatting",
     "regen": "poetry run wiswa",
     "ruff": "poetry run ruff check",
-    "ruff:fix": "poetry run ruff check --fix",
-    "test": "poetry run pytest",
-    "test:cov": "yarn test --cov . --cov-report html --cov-report term-missing:skip-covered"
+    "ruff:fix": "poetry run ruff check --fix"
   },
   "version": "0.0.6"
 }
