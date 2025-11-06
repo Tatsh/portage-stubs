@@ -101,5 +101,5 @@
     "ruff": "poetry run ruff check",
     "ruff:fix": "poetry run ruff check --fix"
   },
-  "version": "0.0.6"
+  "version": "0.0.7"
 }
