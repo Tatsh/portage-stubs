@@ -28,6 +28,7 @@ jinja
 jsonnet
 jsonschema
 lextudio
+libera
 libjsonnet
 linters
 listonly
@@ -57,6 +58,8 @@ prerm
 pycache
 pydocstyle
 pylint
+pypa
+pypi
 pyproject
 pytest
 qmerge
@@ -68,6 +71,7 @@ returnproc
 rstcheck
 schemafile
 shellformat
+softprops
 tatsh
 udvare
 useflags

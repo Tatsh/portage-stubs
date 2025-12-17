@@ -79,7 +79,7 @@ optional = true
 commitizen = "^4.10.1"
 cz-path = "^0.0.4"
 djlint = "^1.36.4"
-mypy = "^1.19.0"
+mypy = "^1.19.1"
 ruff = "^0.14.9"
 yapf = "^0.43.0"
 
@@ -100,7 +100,6 @@ reportImplicitOverride = "none"
 reportImportCycles = "error"
 reportMissingModuleSource = "error"
 reportPropertyTypeMismatch = "error"
-reportShadowedImports = "error"
 reportUnnecessaryTypeIgnoreComment = "none"
 typeCheckingMode = "off"
 useLibraryCodeForTypes = false
