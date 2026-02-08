@@ -7,9 +7,24 @@ def vercmp(ver1: str, ver2: str, silent: Literal[0, 1] = ...) -> int | None:
 
 
 class _pkg_str(str):  # noqa: FURB189
-    stable: bool
+    @property
+    def stable(self) -> bool: ...
 
-    def __new__(cls, cpv: str) -> Self:
+    def __new__(
+        cls,
+        cpv: str,
+        metadata: dict[str, Any] | None = ...,
+        settings: Any = ...,
+        eapi: Any = ...,
+        repo: str | None = ...,
+        slot: str | None = ...,
+        build_time: int | None = ...,
+        build_id: str | None = ...,
+        file_size: int | None = ...,
+        mtime: int | None = ...,
+        db: Any = ...,
+        repoconfig: Any = ...,
+    ) -> Self:
         ...
 
     def __init__(
