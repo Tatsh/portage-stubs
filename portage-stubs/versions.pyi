@@ -8,7 +8,8 @@ def vercmp(ver1: str, ver2: str, silent: Literal[0, 1] = ...) -> int | None:
 
 class _pkg_str(str):  # noqa: FURB189
     @property
-    def stable(self) -> bool: ...
+    def stable(self) -> bool:
+        ...
 
     def __new__(
         cls,
