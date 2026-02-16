@@ -80,7 +80,7 @@ commitizen = "^4.13.7"
 cz-path = "^0.0.4"
 djlint = "^1.36.4"
 mypy = "^1.19.1"
-ruff = "^0.15.0"
+ruff = "^0.15.1"
 yapf = "^0.43.0"
 
 [tool.poetry.group.dev.dependencies.portage]
