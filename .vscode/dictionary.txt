@@ -3,7 +3,6 @@ bestmatch
 bsky
 catpkgsplit
 cleanrm
-codeowners
 commitizen
 conftest
 coveragerc
