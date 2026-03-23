@@ -1,6 +1,16 @@
 [build-system]
-build-backend = "poetry.core.masonry.api"
-requires = ["poetry-core"]
+build-backend = "hatchling.build"
+requires = ["hatchling"]
+
+[dependency-groups]
+dev = [
+  "commitizen>=4.13.9",
+  "cz-path>=0.0.6",
+  "mypy>=1.19.1",
+  "portage>=3.0.77",
+  "ruff>=0.15.7",
+  "yapf>=0.43.0",
+]
 
 [project]
 classifiers = [
@@ -14,12 +24,13 @@ classifiers = [
   "Programming Language :: Python :: 3.14",
   "Typing :: Stubs Only",
 ]
+dependencies = ["typing-extensions>=4.15.0"]
 description = "PEP 561 type stubs for portage."
-dynamic = ["dependencies", "requires-python"]
 keywords = ["gentoo", "pep561", "portage", "stubs", "types"]
 license = "MIT"
 name = "portage-stubs"
 readme = "README.md"
+requires-python = ">=3.10,<4.0"
 version = "0.0.7"
 
 [[project.authors]]
@@ -47,16 +58,11 @@ version_files = [
 ]
 version_provider = "pep621"
 
-[tool.djlint]
-max_line_length = 100
-no_line_after_yaml = true
-preserve_blank_lines = true
-preserve_leading_space = true
-profile = "jinja"
-use_gitignore = true
-
 [tool.doc8]
 max-line-length = 100
+
+[tool.hatch.build.targets.wheel]
+packages = ["portage-stubs"]
 
 [tool.mypy]
 cache_dir = "~/.cache/mypy"
@@ -68,30 +74,10 @@ strict = true
 strict_optional = true
 warn_unreachable = true
 
-[tool.poetry.dependencies]
-python = ">=3.10,<4.0"
-typing-extensions = "^4.15.0"
-
-[tool.poetry.group.dev]
-optional = true
-
-[tool.poetry.group.dev.dependencies]
-commitizen = "^4.13.9"
-cz-path = "^0.0.5"
-djlint = "^1.36.4"
-mypy = "^1.19.1"
-ruff = "^0.15.6"
-yapf = "^0.43.0"
-
-[tool.poetry.group.dev.dependencies.portage]
-git = "https://github.com/gentoo/portage.git"
-
-[[tool.poetry.packages]]
-include = "portage-stubs"
-
 [tool.pyright]
 deprecateTypingAliases = true
 enableExperimentalFeatures = true
+exclude = [".venv", "**/node_modules", "**/__pycache__", "**/.*"]
 include = ["./portage-stubs"]
 pythonPlatform = "Linux"
 pythonVersion = "3.10"
@@ -178,6 +164,9 @@ max-positional-args = 15
 max-public-methods = 30
 max-returns = 10
 max-statements = 100
+
+[tool.uv]
+default-groups = ["dev"]
 
 [tool.yapf]
 align_closing_bracket_with_visual_indent = true

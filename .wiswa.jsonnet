@@ -1,3 +1,5 @@
+local utils = import 'utils.libjsonnet';
+
 {
   description: 'PEP 561 type stubs for portage.',
   keywords: ['gentoo', 'pep561', 'portage', 'stubs', 'types'],
@@ -13,7 +15,7 @@
         group+: {
           dev+: {
             dependencies+: {
-              portage: { git: 'https://github.com/gentoo/portage.git' },
+              portage: utils.latestPypiPackageVersionCaret('portage'),
             },
           },
         },
