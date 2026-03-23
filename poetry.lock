@@ -211,14 +211,14 @@ six = ">=1.13.0"
 
 [[package]]
 name = "cz-path"
-version = "0.0.5"
+version = "0.0.6"
 description = "Commitizen plugin that prefixes commit messages with the common path or prefix of staged files."
 optional = false
 python-versions = "<4.0,>=3.10"
 groups = ["dev"]
 files = [
-    {file = "cz_path-0.0.5-py3-none-any.whl", hash = "sha256:79f505278c60f93c4f1f6cbab9e39acc040561364f85b9dfcb6f0607e003813f"},
-    {file = "cz_path-0.0.5.tar.gz", hash = "sha256:c8c9b6a70ab250069760450ab7808b64a687dc04fbd920afe0e8ba0fb0730373"},
+    {file = "cz_path-0.0.6-py3-none-any.whl", hash = "sha256:d616ebc6d374b8ae02b1435c274ac5a22ab706da5c2cc3c5257f61e49b768190"},
+    {file = "cz_path-0.0.6.tar.gz", hash = "sha256:025c5556b03b58191a5c9ae2fbd9344456d4b3e1bd2420ed1790da1074cf34eb"},
 ]
 
 [package.dependencies]
@@ -1254,4 +1254,4 @@ tomli = {version = ">=2.0.1", markers = "python_version < \"3.11\""}
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.10,<4.0"
-content-hash = "c02eaaf07a1a74f244b97bc7f3f4d1f3aa91824ee6a0f5b06361b10377651012"
+content-hash = "1bd1d4276a9915582716dc0d4b97a1196211622dd989779a8d811b2c93f27a93"
