@@ -1,3 +1,4 @@
+Ångström
 appimage
 asyncio
 bascom
@@ -8,13 +9,13 @@ cdrommsf
 cleanrm
 commitizen
 conftest
+cooldown
 coveragerc
 ctypes
 dashcam
 dbapi
 docstrings
 doebuild
-dorny
 dunder
 eeyore
 elif
@@ -33,6 +34,7 @@ instprep
 isort
 itertools
 iuse
+jinja
 jsonnet
 jsonschema
 kwargs
@@ -56,6 +58,7 @@ mypy
 myrepo
 mytree
 nofetch
+npmjs
 numpy
 oneline
 origdep
@@ -73,6 +76,7 @@ pycache
 pydocstyle
 pyinstaller
 pylint
+pylock
 pypa
 pypi
 pyproject
@@ -85,6 +89,7 @@ returnpid
 returnproc
 rstcheck
 schemafile
+sdist
 setattr
 shellcheck
 shellformat
@@ -101,8 +106,8 @@ vendored
 venv
 vercmp
 wiswa
+wiswa's
 xmatch
 yapf
 yapfignore
 yarnrc
-ångström
