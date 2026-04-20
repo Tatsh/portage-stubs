@@ -20,6 +20,7 @@ dunder
 eeyore
 elif
 eprefix
+esac
 esbenp
 fetchonly
 findname
@@ -81,12 +82,14 @@ pypa
 pypi
 pyproject
 pytest
+pythonhosted
 qmerge
 rdepend
 regen
 repoconfig
 returnpid
 returnproc
+ripgreprc
 rstcheck
 schemafile
 sdist
@@ -98,6 +101,7 @@ softprops
 soupsieve
 tatsh
 tomllib
+tostring
 ubyte
 udvare
 useflags
