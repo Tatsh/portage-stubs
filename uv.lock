@@ -3,7 +3,7 @@ revision = 3
 requires-python = ">=3.10, <4.0"
 
 [options]
-exclude-newer = "2026-04-14T05:11:57.821818455Z"
+exclude-newer = "2026-04-14T06:26:20.070180198Z"
 exclude-newer-span = "P1W"
 
 [[package]]
@@ -499,7 +499,7 @@ wheels = [
 
 [[package]]
 name = "portage-stubs"
-version = "0.0.8"
+version = "0.0.9"
 source = { editable = "." }
 dependencies = [
     { name = "typing-extensions" },

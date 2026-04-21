@@ -112,5 +112,5 @@
     "ruff:fix": "uv run ruff check --fix",
     "ty": "uv run ty check"
   },
-  "version": "0.0.8"
+  "version": "0.0.9"
 }
