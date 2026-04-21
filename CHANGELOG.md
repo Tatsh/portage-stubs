@@ -9,6 +9,12 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Added
+
+- Re-exported `portage.doebuild` from `portage.package.ebuild.doebuild` at the top level.
+- Defined `__all__` on the top-level `portage` stub package to declare the public re-exports
+  (`config`, `db`, `doebuild`, `root`, and `settings`).
+
 ## [0.0.8] - 2026-04-21
 
 ### Added
