@@ -10,6 +10,12 @@ class portdbapi(dbapi):
                     mytree: str | None = ...) -> dict[str, tuple[str, ...]]:
         ...
 
+    async def async_fetch_map(self,
+                              mypkg: str,
+                              useflags: Sequence[str] | None = ...,
+                              mytree: str | None = ...) -> dict[str, tuple[str, ...]]:
+        ...
+
 
 class portagetree:
     dbapi: portdbapi

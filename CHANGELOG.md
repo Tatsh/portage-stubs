@@ -9,6 +9,12 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Added
+
+- `portage.dbapi.dbapi.async_aux_get`
+- `portage.dbapi.dbapi.async_xmatch`
+- `portage.dbapi.porttree.portdbapi.async_fetch_map`
+
 ## [0.0.7]
 
 ### Changed
