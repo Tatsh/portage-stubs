@@ -4,12 +4,12 @@ requires = ["hatchling"]
 
 [dependency-groups]
 dev = [
-  "commitizen>=4.13.10",
-  "cz-path>=0.0.6",
-  "mypy>=1.20.1",
-  "portage>=3.0.77",
+  "commitizen>=4.16.5",
+  "cz-path>=0.0.7",
+  "mypy>=2.3.0",
+  "portage>=3.0.81.2",
   "ruff==0.16.0",
-  "ty>=0.0.31",
+  "ty>=0.0.64",
   "yapf>=0.43.0",
 ]
 
@@ -25,7 +25,7 @@ classifiers = [
   "Programming Language :: Python :: 3.14",
   "Typing :: Stubs Only",
 ]
-dependencies = ["typing-extensions>=4.15.0"]
+dependencies = ["typing-extensions>=4.16.0"]
 description = "PEP 561 type stubs for portage."
 keywords = ["gentoo", "pep561", "portage", "stubs", "types"]
 license = "MIT"
@@ -116,6 +116,9 @@ ignore = [
   "I001",
   "N",
   "N818",
+  "RUF105",
+  "RUF106",
+  "RUF201",
   "S",
   "S404",
   "S603",
