@@ -31,7 +31,7 @@ repos:
       - id: 'detect-private-key'
       - exclude: "^vcpkg.*\\.json$"
         id: 'end-of-file-fixer'
-      - files: "^(\\.(docker|eslint|prettier)ignore|CODEOWNERS|\\.gitattributes)$"
+      - files: "^(\\.(docker|eslint|prettier)ignore|CODEOWNERS|\\.gitattributes|\\.vscode/dictionary\\.txt)$"
         id: 'file-contents-sorter'
       - id: 'fix-byte-order-marker'
       - id: 'mixed-line-ending'
@@ -46,7 +46,7 @@ repos:
           - '--frozen'
         id: 'uv-sync'
     repo: 'https://github.com/astral-sh/uv-pre-commit'
-    rev: '0.12.7'
+    rev: '0.12.9'
   - hooks:
       - args:
           - '--fix'
@@ -116,4 +116,4 @@ repos:
   - hooks:
       - id: 'cspell'
     repo: 'https://github.com/streetsidesoftware/cspell-cli'
-    rev: 'v10.1.0'
+    rev: 'v10.0.1'

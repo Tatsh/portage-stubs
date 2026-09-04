@@ -4,12 +4,12 @@ requires = ["hatchling"]
 
 [dependency-groups]
 dev = [
-  "commitizen>=4.16.5",
+  "commitizen>=4.18.0",
   "cz-path>=0.0.7",
-  "mypy>=2.3.0",
-  "portage>=3.0.81.2",
+  "mypy>=2.3.1",
+  "portage>=3.0.82.1",
   "ruff==0.16.5",
-  "ty>=0.0.64",
+  "ty>=0.0.75",
   "yapf>=0.43.0",
 ]
 
@@ -73,7 +73,7 @@ warn_unreachable = true
 [tool.pyright]
 deprecateTypingAliases = true
 enableExperimentalFeatures = true
-exclude = [".venv", "**/node_modules", "**/__pycache__", "**/.*"]
+exclude = [".sbclaude-venv", ".venv", "**/node_modules", "**/__pycache__", "**/.*"]
 include = ["./portage-stubs"]
 pythonPlatform = "Linux"
 pythonVersion = "3.10"
@@ -92,6 +92,7 @@ cache-dir = "~/.cache/ruff"
 force-exclude = true
 line-length = 100
 namespace-packages = ["docs", "tests"]
+output-prefer-rule-codes = true
 target-version = "py310"
 unsafe-fixes = true
 
@@ -140,7 +141,7 @@ case-sensitive = true
 combine-as-imports = true
 from-first = true
 required-imports = ["from __future__ import annotations"]
-section-order = ["future", "standard-library", "third-party", "local-folder"]
+section-order = ["future", "standard-library", "third-party", "first-party", "local-folder"]
 
 [tool.ruff.lint.mccabe]
 max-complexity = 20
@@ -211,4 +212,4 @@ split_penalty_logical_operator = 300
 use_tabs = false
 
 [tool.yapfignore]
-ignore_patterns = [".venv", ".wiswa-ci", "node_modules"]
+ignore_patterns = [".sbclaude-venv", ".venv", ".wiswa-ci", "node_modules"]
