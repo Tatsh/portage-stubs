@@ -9,6 +9,15 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Added
+
+- `portage.package.ebuild.config.config.backup_changes`
+
+### Fixed
+
+- `portage.package.ebuild.config.config.__iter__` returns `Iterator[str]`. It was declared as
+  returning `str`, which made the class unusable in any iteration context.
+
 ## [0.0.9] - 2026-04-21
 
 ### Added

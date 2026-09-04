@@ -1,3 +1,4 @@
+from collections.abc import Iterator
 from typing import Any
 
 
@@ -26,7 +27,10 @@ class config:
     def __delitem__(self, key: str) -> None:
         ...
 
-    def __iter__(self) -> str:
+    def __iter__(self) -> Iterator[str]:
+        ...
+
+    def backup_changes(self, key: str | None = ...) -> None:
         ...
 
     def get(self, k: str, x: Any = ...) -> Any:
