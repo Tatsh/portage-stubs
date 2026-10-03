@@ -57,8 +57,10 @@ mypy
 myrepo
 mytree
 nofetch
+noone
 nullglob
 numpy
+numpydoc
 oneline
 origdep
 pathlib
@@ -115,7 +117,6 @@ vercmp
 winget
 wiswa
 wiswa's
-worktree
 xmatch
 yapf
 yapfignore

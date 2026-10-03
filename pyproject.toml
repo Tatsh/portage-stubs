@@ -4,13 +4,13 @@ requires = ["hatchling"]
 
 [dependency-groups]
 dev = [
-  "commitizen>=4.18.0",
+  "commitizen>=4.19.0",
   "cz-path>=0.0.7",
   "mypy>=2.3.1",
-  "portage>=3.0.82.1",
+  "portage>=3.0.82.2",
   "ruff==0.16.9",
-  "ty>=0.0.75",
-  "yapf>=0.43.0",
+  "ty>=0.0.84",
+  "yapf>=0.43.0"
 ]
 
 [project]
@@ -23,7 +23,7 @@ classifiers = [
   "Programming Language :: Python :: 3.12",
   "Programming Language :: Python :: 3.13",
   "Programming Language :: Python :: 3.14",
-  "Typing :: Stubs Only",
+  "Typing :: Stubs Only"
 ]
 dependencies = ["typing-extensions>=4.16.0"]
 description = "PEP 561 type stubs for portage."
@@ -92,7 +92,6 @@ cache-dir = "~/.cache/ruff"
 force-exclude = true
 line-length = 100
 namespace-packages = ["docs", "tests"]
-output-prefer-rule-codes = true
 target-version = "py310"
 unsafe-fixes = true
 
@@ -105,27 +104,24 @@ quote-style = "single"
 [tool.ruff.lint]
 extend-select = ["ALL"]
 ignore = [
-  "A002",
-  "ANN401",
-  "COM812",
-  "CPY001",
-  "D203",
-  "D204",
-  "D212",
-  "E303",
-  "FBT001",
-  "I001",
   "N",
-  "N818",
-  "RUF105",
-  "RUF106",
-  "RUF201",
   "S",
-  "S404",
-  "S603",
-  "T201",
-  "TD002",
-  "TID252",
+  "any-type",
+  "boolean-type-hint-positional-argument",
+  "builtin-argument-shadowing",
+  "error-suffix-on-exception-name",
+  "incorrect-blank-line-after-class",
+  "incorrect-blank-line-before-class",
+  "missing-copyright-notice",
+  "missing-todo-author",
+  "missing-trailing-comma",
+  "multi-line-summary-first-line",
+  "print",
+  "relative-imports",
+  "subprocess-without-shell-equals-true",
+  "suspicious-subprocess-import",
+  "too-many-blank-lines",
+  "unsorted-imports"
 ]
 preview = true
 
