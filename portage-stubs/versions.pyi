@@ -1,5 +1,5 @@
 from typing import Any, Literal
-from typing_extensions import Self
+from typing import Self
 
 
 def vercmp(ver1: str, ver2: str, silent: Literal[0, 1] = ...) -> int | None:
