@@ -9,6 +9,13 @@ local utils = import 'utils.libjsonnet';
   want_docs: false,
   want_tests: false,
   stubs_only: true,
+  github+: {
+    codeql+: {
+      languages: ['actions'],
+      runs_on: 'ubuntu-latest',
+      workflow_file: 'codeql.yml',
+    },
+  },
   primary_module: 'portage-stubs',
   pyproject+: {
     tool+: {
