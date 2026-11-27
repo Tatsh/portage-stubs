@@ -4,12 +4,12 @@ requires = ["hatchling"]
 
 [dependency-groups]
 dev = [
-  "commitizen>=4.19.0",
+  "commitizen>=4.19.4",
   "cz-path>=0.0.7",
-  "mypy>=2.3.1",
-  "portage>=3.0.82.2",
+  "mypy>=2.4.1",
+  "portage>=3.0.83",
   "ruff==0.17.6",
-  "ty>=0.0.84",
+  "ty>=0.0.107",
   "yapf>=0.43.0"
 ]
 
@@ -30,7 +30,7 @@ keywords = ["gentoo", "pep561", "portage", "stubs", "types"]
 license = "MIT"
 name = "portage-stubs"
 readme = "README.md"
-requires-python = ">=3.11,<4.0"
+requires-python = ">=3.11.5,<4.0"
 version = "0.0.10"
 
 [[project.authors]]
